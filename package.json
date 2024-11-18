@@ -44,5 +44,8 @@
       "last 1 safari version"
     ],
     "proxy": "https://api.mercadolibre.com"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
