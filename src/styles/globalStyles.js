@@ -9,45 +9,41 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #101010;  // Fundo mais escuro
-    color: #f4f4f4;  // Cor de texto mais clara para contraste
+    background-color: #101010; 
+    color: #f4f4f4; 
     overflow-x: hidden;
   }
 
   h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    color: #f4f4f4;  // Títulos em cor clara
+    color: #f4f4f4;
   }
 
   p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #bbb;  // Cor de parágrafo mais suave para contraste
+    color: #bbb; 
   }
 
   a {
     text-decoration: none;
-    color: #F1C40F;  // Cor de link amarela para destaque
+    color: #F1C40F; 
     transition: color 0.3s;
   }
 
   a:hover {
-    color: #f4f4f4;  // Cor de hover mais clara
+    color: #f4f4f4;
   }
 
   button {
     border: none;
     background-color: #F1C40F;
-    color: #101010;  // Cor de texto escura para contraste com o fundo amarelo
+    color: #101010; 
     padding: 12px 30px;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1rem;
-  }
-
-  button:hover {
-    background-color: #DDA800;  // Um tom mais escuro de amarelo para hover
   }
 
   section {
@@ -58,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
   section h2 {
     margin-bottom: 40px;
     font-size: 2.5rem;
-    color: #F1C40F;  // Títulos de seções em amarelo
+    color: #F1C40F;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
@@ -74,7 +70,7 @@ const GlobalStyles = createGlobalStyle`
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  // Um pouco mais de sombra para contraste
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
   }
 
@@ -112,12 +108,12 @@ const GlobalStyles = createGlobalStyle`
 
   .social-links a {
     font-size: 1.5rem;
-    color: #F1C40F;  // Cor dos ícones sociais em amarelo
+    color: #F1C40F;
     transition: color 0.3s;
   }
 
   .social-links a:hover {
-    color: #f4f4f4;  // Hover para cor clara nos ícones sociais
+    color: #f4f4f4; 
   }
 `;
 

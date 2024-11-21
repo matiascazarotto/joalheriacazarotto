@@ -39,7 +39,7 @@ const NossaLojaFisica = () => {
       <StoreImage src="url-da-imagem-da-loja.jpg" alt="Loja Física" />
       <p>Estamos localizados em</p>
       <Address>
-        Avenida do Comércio, 540 - Centro
+        Avenida do Comércio, 536 - Centro
         <br />
         Rodeio Bonito - RS
       </Address>

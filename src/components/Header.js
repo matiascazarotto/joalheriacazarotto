@@ -12,7 +12,7 @@ const Root = styled('div')({
 const StyledAppBar = styled(AppBar)({
   background: 'rgba(255, 222, 89, 0.8)',
   boxShadow: 'none',
-  backdropFilter: 'blur(3px)',  // Efeito de desfoque no fundo
+  backdropFilter: 'blur(3px)', 
   position: 'fixed',
   top: 0,
   left: 0,
@@ -44,7 +44,7 @@ const StyledButton = styled(Button)({
   },
 });
 
-const Header = ({ scrollToHome, scrollToBio, scrollToContact }) => {
+const Header = ({ scrollToHome, scrollToAbout, scrollToContact }) => {
   return (
     <Root>
       <StyledAppBar>
@@ -53,7 +53,7 @@ const Header = ({ scrollToHome, scrollToBio, scrollToContact }) => {
             CAZAROTTO JOALHERIA
           </Title>
           <StyledButton onClick={scrollToContact}>Contato</StyledButton>
-          <StyledButton onClick={scrollToBio}>Sobre</StyledButton>
+          <StyledButton onClick={scrollToAbout}>Sobre</StyledButton>
         </Toolbar>
       </StyledAppBar>
     </Root>

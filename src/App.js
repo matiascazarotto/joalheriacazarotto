@@ -7,38 +7,30 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import GlobalStyles from './styles/globalStyles';
 import NossaLojaFisica from './components/NossaLojaFisica';
-import MercadoShopsSection from './components/MercadoShops';
 
 function App() {
   // Referências para as seções
-  const productsRef = useRef(null);
-  const aboutRef = useRef(null);
+
   const contactRef = useRef(null);
+  const aboutRef = useRef(null);
+  const homeRef = useRef(null);
 
   // Funções para rolagem suave
-  const scrollToProducts = () => {
-    if (productsRef.current) {
-      productsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
 
+  const scrollToHome = () => {
+    homeRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   const scrollToAbout = () => {
-    if (aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
   };
-
   const scrollToContact = () => {
-    if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    contactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Componentes com forwardRef para passar as referências
-  const ProductsScroll = React.forwardRef((props, ref) => {
+  const FullScreenBackgroundScroll = React.forwardRef((props, ref) => {
     return (
       <div ref={ref}>
-        <Products />
+        <FullScreenBackground />
       </div>
     );
   });
@@ -63,14 +55,14 @@ function App() {
     <>
       <GlobalStyles />
       <Header 
-        scrollToProducts={scrollToProducts} 
-        scrollToAbout={scrollToAbout} 
-        scrollToContact={scrollToContact} 
+        scrollToContact={scrollToContact}
+        scrollToAbout={scrollToAbout}
+        scrollToHome={scrollToHome}
       />
-      <FullScreenBackground />
-      <AboutScroll ref={aboutRef} />
-      <ProductsScroll ref={productsRef} />
-      <NossaLojaFisica ref={aboutRef} />
+      <FullScreenBackgroundScroll ref={homeRef}/>
+      <AboutScroll ref={aboutRef}/>
+      <Products />
+      <NossaLojaFisica />
       <ContactScroll ref={contactRef} />
       <Footer />
     </>
